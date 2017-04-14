@@ -1,16 +1,35 @@
 * {
-	font-family: 'roboto', sans-serif;
+	box-sizing: border-box;
 }
 
-nav {
-	width:100%;
-	position: fixed;
+body {
+	font-family:'Roboto', sans-serif;
+	font-size:18px;
+}
+
+header {
 	background-color:lightgray;
+	overflow:auto;
+	padding-top: 10px;
+	padding-bottom:10px;
+}
+
+h1 {
+	font-size: 18px;
+	float:left;
+	padding-left:20px;
+	width:50%;
+	font-weight: medium;
+}
+
+.headnav{
+	/* position: fixed; */
+	/*background-color:lightgray;*/
 	padding-left:10px;
 	padding-right:10px;
-	margin-top: auto;
-	margin-bottom:auto;
 	text-align: right;
+	float:right;
+	width:50%;
 }
 
 ul {
@@ -25,31 +44,22 @@ ul a {
 li {
 	display:inline-block;
 	padding-right: 10px;
-	position:relative;
-	right:20px;
 	text-decoration: none;
-}
-
-nav span {
-	font-size:15pt;
-	font-weight: bold;
-	position:absolute;
-	left:10px;
-	top:12px;
 }
 
 .container {
 	padding-top: 50px;
-	padding-right: 100px
-	padding-left:100px;
 }
 
 .search {
 	margin-top: 20px;
-	font-weight: bold;
 	font-size:12pt;
-	width: 100%;
-	padding-left:100px;
+}
+
+main {
+	margin:0 auto;
+	width:70%;
+	max-width: 960px;
 }
 
 .search img {
@@ -59,18 +69,94 @@ nav span {
 	margin-bottom:auto;
 }
 
-input {
-	margin-top: auto;
-	margin-bottom: auto;
-	width: 400px;
-	height: 20px;
+label {
+	display:block;
+	margin-bottom:5px;
+}
+
+input[type=search] {
+	font-family: 'Roboto', sans-serif;
+	float:left;
+	font-size:18px;
+	width:400px;
+	height:30px;
+	border:solid lightgray 1px;
+	border-radius:5px;
+}
+
+input[type=image] {
+	float:left;
+	margin-left: 5px;
+	width: 30px;
+	height:30px;
+	border:solid lightgray 1px;
 	border-radius: 5px;
 }
 
-button {
-	margin-top: 5px;
-	width: 25px;
-	height:25px;
+.resultsnav {
+	padding-top:30px;
+	clear:left;
+}
+
+.results {
+	display:inline-block;
+	margin:0 auto;
+}
+
+.rnav {
+	display:inline-block;
+	border:solid lightgray 1px;
 	border-radius: 5px;
-	background-color: white;
+}
+
+.rnav a {
+	color:black;
+}
+
+.prev {
+	border-right: solid lightgray 1px;
+	padding: 10px 10px;
+}
+
+.current {
+	padding:10px 10px;
+}
+
+.next {
+	border-left: solid lightgray 1px;
+	padding:10px 10px;
+}
+
+.container {
+	padding-top: 30px;
+}
+
+.result {
+	display:inline-block;
+	margin: 5px 5px;
+}
+
+.date {
+	font-weight: 300;
+	color:lightgray;
+	height: 30px;
+	vertical-align: middle;
+}
+
+.title {
+	height:30px;
+	vertical-align: middle;
+}
+
+.title a {
+	font-weight: bold;
+	color:blue;
+	text-decoration: none;
+}
+
+.location {
+	font-weight: 300;
+	color: lightgray;
+	height: 30px;
+	vertical-align: middle;
 }

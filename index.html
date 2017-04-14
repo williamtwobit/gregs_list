@@ -3,13 +3,13 @@
 <head>
 	<title>Greg's List</title>
 	<meta name="description" content="Lorem Ipsum">
+	<link rel="stylesheet" type="text/css" href="meyersreset.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-</head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 <body>
-	<nav>
-		<div class="navbar">
-			<span>Greg's List</span>
+	<header>
+		<h1>Greg's List</h1>
+		<nav class="headnav">
 			<ul>
 				<li>
 					<a href="">Post</a>
@@ -18,16 +18,35 @@
 					<a href="">Account</a>
 				</li>
 			</ul>
-		</div>
-	</nav>
+		</nav>
+	</header>
 	<main>
-		<div class="container">
-			<div class="search">
+		<div class="search">
+			<form>
 				<label>Search Jobs</label>
-				<form>
-					<input class="bar"placeholder="Search Software Jobs">
-					<button type="button"><img src="images/magnifying-glass.png"></button>
-				</form>
+				<input type="search" placeholder="Search Software Jobs">
+				<input type="image" src="images/magnifying-glass.png">
+			</form>
+		</div>
+		<div class="resultsnav">
+			<nav class="rnav">
+				<a href=""><div class="results prev"> < prev </div></a>
+				<div class="results current"> 1 to 100 of 179 </div>
+				<a href=""><div class="results next"> next > </div></a>
+			</nav>
+		</div>
+		<div class="container">
+			<div class="entry">
+				<div class="result date"> June 22 </div>
+				<div class="result title"> <a href="">Technical Project Manager</a> </div> <div class="result location"> Midtown East </div>
+			</div>
+			<div class="entry">
+				<div class="result date"> June 21 </div>
+				<div class="result title"> <a href="">Frontend Developer</a> </div> <div class="result location"> SoHo </div>
+			</div>
+			<div class="entry">
+				<div class="result date"> June 20 </div>
+				<div class="result title"> <a href="">Senior Python Developer / Cofounder</a> </div> <div class="result location"> Flatiron </div>
 			</div>
 		</div>
 	</main>
